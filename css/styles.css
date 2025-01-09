@@ -128,6 +128,7 @@ transform: rotate(360deg);
     align-items: center;
 }
 
+/* Button: Default */
 .button-view-project {
     display: block;
     padding: 1em;
@@ -147,6 +148,22 @@ transform: rotate(360deg);
     color: var(--white);
 }
 
+/* Button: Disabled */
+.button-view-project-disabled {
+    display: block;
+    padding: 1em;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    cursor: not-allowed;
+}
+
 /* ---------- Footer ---------- */
 footer {
     padding-top: 1.5em;
@@ -158,6 +175,7 @@ footer p {
     color: var(--white);
     text-align: center;
 }
+
 /* ---------- PARTIALS SECTION ENDS----------*/
 
 /* *********************************************************** */
