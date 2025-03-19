@@ -52,6 +52,19 @@ nav ul li a {
     text-decoration: none;
     color: #333333;
 }
+/* Indicator */
+.indicator-space {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+.indicator {
+    width: 140px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
+}
 
 /* ----- Rotating object ----- */
 #rotating-object {
@@ -113,10 +126,6 @@ transform: rotate(360deg);
     color: var(--black);
     
 }
-
-/* .badge {
-    padding: 0;
-} */
 
 .tag {
     font-size: 0.75rem;
@@ -197,6 +206,9 @@ footer p {
 /* ---------- PAGE: HOME ---------- */
 /* Section: intro */
 .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10em;
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -208,6 +220,24 @@ footer p {
     color: var(--black);
     font-size: 3rem; /* 48px */
     text-align: center;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+.button-get-to-know-me {
+    max-width: 10em;
+    display: block;
+    padding: 1em;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 2em;
 }
 
 #intro-description {
@@ -237,6 +267,7 @@ footer p {
 #contact {
     text-align: center;
     margin-bottom: 5em;
+    color: var(--white);
 }
 #contact-title { 
     font-family: "DM Sans", sans-serif;
@@ -246,7 +277,7 @@ footer p {
 
 #contact-email {
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--white);
 }
 
 #social-media {
@@ -255,7 +286,7 @@ footer p {
 
 #linkedin, #behance, #vimeo, #resume {
     font-weight: 900;
-    color: var(--black);
+    color: var(--white);
 }
 
 #linkedin:hover, #behance:hover {
