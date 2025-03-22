@@ -52,19 +52,6 @@ nav ul li a {
     text-decoration: none;
     color: #333333;
 }
-/* -----Indicator----- */
-.indicator-space {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-}
-
-.indicator {
-    width: 140px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    align-items: center;
-}
 
 /* ----- Rotating object ----- */
 #rotating-object {
@@ -93,7 +80,7 @@ transform: rotate(360deg);
     font-size: 2rem; /* 32px */
     text-align: center;
     margin-bottom: 1em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 /* card animation */
@@ -227,7 +214,7 @@ footer p {
     font-family: "ivymode", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 2.5rem; /* 40px 48px */
+    font-size: 2.25rem; /* 36px */
     text-align: center;
     margin-bottom: 0.5em;
     line-height: 1.5em;
@@ -236,7 +223,7 @@ footer p {
 #intro-title .italic-word {
     font-family: "ivymode", sans-serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.25rem;/* 36px */
     color: var(--black);
     font-style: italic;
 }
@@ -245,7 +232,7 @@ footer p {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 1.25rem; /* 20px 24px */
+    font-size: 1.125rem; /* 20px*/
     text-align: center;
 }
 
@@ -265,6 +252,19 @@ footer p {
     margin-top: 2em;
 }
 
+/* -----Indicator----- */
+.indicator-space {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+.indicator {
+    width: 140px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
+}
 
 /* Flickering asterisk */
 #contact-asterisk {
@@ -489,7 +489,7 @@ footer p {
         margin: auto;
         max-width: 60%;
     }
-    /* ---------- |Phone| PAGE: HOME ---------- */
+    /* ---------- |Desktop| PAGE: HOME ---------- */
     /* Section: intro */
     #home-chuong-portrait {
         max-width: 7.5em;
