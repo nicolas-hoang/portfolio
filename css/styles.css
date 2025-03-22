@@ -52,7 +52,7 @@ nav ul li a {
     text-decoration: none;
     color: #333333;
 }
-/* Indicator */
+/* -----Indicator----- */
 .indicator-space {
     width: 100%;
     display: flex;
@@ -177,6 +177,8 @@ transform: rotate(360deg);
 footer {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: var(--black);
 }
 
@@ -203,8 +205,15 @@ footer p {
     /* make the footer to the end of the browser */
 }
 
-/* ---------- PAGE: HOME ---------- */
+/* ---------- |Phone| PAGE: HOME ---------- */
 /* Section: intro */
+#home-chuong-portrait {
+    max-width: 7.5em;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+
+}
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -218,10 +227,26 @@ footer p {
     font-family: "ivymode", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 3rem; /* 48px */
+    font-size: 2.5rem; /* 40px 48px */
     text-align: center;
     margin-bottom: 0.5em;
     line-height: 1.5em;
+}
+
+#intro-title .italic-word {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-style: italic;
+}
+
+#intro-description {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 1.25rem; /* 20px 24px */
+    text-align: center;
 }
 
 .button-get-to-know-me {
@@ -240,13 +265,6 @@ footer p {
     margin-top: 2em;
 }
 
-#intro-description {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    color: var(--black);
-    font-size: 1.5rem; /* 24px */
-    text-align: center;
-}
 
 /* Flickering asterisk */
 #contact-asterisk {
@@ -470,6 +488,49 @@ footer p {
     .intro p {
         margin: auto;
         max-width: 60%;
+    }
+    /* ---------- |Phone| PAGE: HOME ---------- */
+    /* Section: intro */
+    #home-chuong-portrait {
+        max-width: 7.5em;
+        margin-top: 5em;
+        margin-bottom: 2.5em;
+
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    #intro-title { 
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 4rem; /* 48px */
+        text-align: center;
+        margin-bottom: 0.5em;
+        line-height: 1.5em;
+    }
+
+    #intro-title .italic-word {
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--black);
+        font-style: italic;
+    }
+
+    #intro-description {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 1.5rem; /* 24px */
+        text-align: center;
     }
 
     /* ---------- |Desktop| PAGE: ABOUT ---------- */
