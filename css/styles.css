@@ -8,6 +8,7 @@
     --grey: #e3e3e3;
     --light-grey: #f5f5f5;
     --dark-grey: #343434;
+    --yellow:#ffe57d;
 }
 
 * {
@@ -53,7 +54,7 @@ nav ul li a {
     color: #333333;
 }
 
-/* ----- Rotating object ----- */
+/* ----- Rotating object -----
 #rotating-object {
     margin-top: 5em;
     margin-bottom: 2.5em;
@@ -69,7 +70,7 @@ transform: rotate(0deg);
 to {
 transform: rotate(360deg);
 }
-}
+} */
 
 /* ----- UX, Video and Photo Partials ----- */
 
@@ -80,7 +81,7 @@ transform: rotate(360deg);
     font-size: 2rem; /* 32px */
     text-align: center;
     margin-bottom: 1em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 /* card animation */
@@ -114,10 +115,6 @@ transform: rotate(360deg);
     
 }
 
-/* .badge {
-    padding: 0;
-} */
-
 .tag {
     font-size: 0.75rem;
     border-radius: 0.375em 0.5em;
@@ -128,6 +125,7 @@ transform: rotate(360deg);
     align-items: center;
 }
 
+/* Button: Default */
 .button-view-project {
     display: block;
     padding: 1em;
@@ -147,10 +145,28 @@ transform: rotate(360deg);
     color: var(--white);
 }
 
+/* Button: Disabled */
+.button-view-project-disabled {
+    display: block;
+    padding: 1em;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    cursor: not-allowed;
+}
+
 /* ---------- Footer ---------- */
 footer {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: var(--black);
 }
 
@@ -158,6 +174,7 @@ footer p {
     color: var(--white);
     text-align: center;
 }
+
 /* ---------- PARTIALS SECTION ENDS----------*/
 
 /* *********************************************************** */
@@ -176,28 +193,78 @@ footer p {
     /* make the footer to the end of the browser */
 }
 
-/* ---------- PAGE: HOME ---------- */
+/* ---------- |Phone| PAGE: HOME ---------- */
 /* Section: intro */
+#home-chuong-portrait {
+    max-width: 7.5em;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+
+}
+
 .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #intro-title { 
     font-family: "ivymode", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 3rem; /* 48px */
+    font-size: 2.25rem; /* 36px */
     text-align: center;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+#intro-title .italic-word {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;/* 36px */
+    color: var(--black);
+    font-style: italic;
 }
 
 #intro-description {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.125rem; /* 20px*/
     text-align: center;
+}
+
+.button-get-to-know-me {
+    max-width: 10em;
+    display: block;
+    padding: 1em;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 2em;
+}
+
+/* -----Indicator----- */
+.indicator-space {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+.indicator {
+    width: 140px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
 }
 
 /* Flickering asterisk */
@@ -219,6 +286,7 @@ footer p {
 #contact {
     text-align: center;
     margin-bottom: 5em;
+    color: var(--white);
 }
 #contact-title { 
     font-family: "DM Sans", sans-serif;
@@ -228,7 +296,7 @@ footer p {
 
 #contact-email {
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--white);
 }
 
 #social-media {
@@ -237,7 +305,7 @@ footer p {
 
 #linkedin, #behance, #vimeo, #resume {
     font-weight: 900;
-    color: var(--black);
+    color: var(--white);
 }
 
 #linkedin:hover, #behance:hover {
@@ -269,11 +337,13 @@ footer p {
     font-weight: 400;
     font-size: 2.5rem;
     margin-bottom: 1em;
+    line-height: 1.5em;
 }
 
 #about-portrait {
     width: 100%;
     border-radius: 0.25em;
+    margin-bottom: 1em;
 }
 
 #about-current-status {
@@ -298,6 +368,12 @@ footer p {
     padding-top: 1.5em;
 }
 
+.about-section-image {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .about-section {
     margin-bottom: 2em;
 }
@@ -308,7 +384,29 @@ footer p {
     text-transform: uppercase;
 }
 
-.work-exp-time-des {
+blockquote {
+    font-family: "ivymode", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: left;
+    padding: 0.5em 0em 0.5em 1em; 
+    /* top right bottom left */
+    line-height: 1.5em;
+    border-left: solid 2px var(--black);
+}
+
+.hyperlink-hightlight {
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.hyperlink-normal {
+    color: var(--black);
+}
+
+work-exp-time-des {
     margin-top: 1em;
     margin-bottom:0;
 }
@@ -394,6 +492,10 @@ footer p {
     margin-bottom: 1em;
 }
 
+.company-link {
+    color: var(--black);
+}
+
 /* *********************************************************** */
 /* *********************************************************** */
 
@@ -418,18 +520,68 @@ footer p {
         margin: auto;
         max-width: 60%;
     }
+    /* ---------- |Desktop| PAGE: HOME ---------- */
+    /* Section: intro */
+    #home-chuong-portrait {
+        max-width: 7.5em;
+        margin-top: 5em;
+        margin-bottom: 2.5em;
+
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    #intro-title { 
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 4rem; /* 48px */
+        text-align: center;
+        margin-bottom: 0.5em;
+        line-height: 1.5em;
+    }
+
+    #intro-title .italic-word {
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--black);
+        font-style: italic;
+    }
+
+    #intro-description {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 1.5rem; /* 24px */
+        text-align: center;
+    }
 
     /* ---------- |Desktop| PAGE: ABOUT ---------- */
     #page-about {
-        max-width: 60%;
+        max-width: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3em;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
+        "about-page-title about-page-title" 
         "about-general about-important-info";
-        gap: 3em;
+        gap: 0.5em;
+    }
+
+    #page-about-title {
+        grid-area: about-page-title;
+        text-align: center;
+        line-height: 1.5em;
     }
 
     #about-portrait {
