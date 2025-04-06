@@ -8,6 +8,7 @@
     --grey: #e3e3e3;
     --light-grey: #f5f5f5;
     --dark-grey: #343434;
+    --yellow:#ffe57d;
 }
 
 * {
@@ -53,7 +54,7 @@ nav ul li a {
     color: #333333;
 }
 
-/* ----- Rotating object ----- */
+/* ----- Rotating object -----
 #rotating-object {
     margin-top: 5em;
     margin-bottom: 2.5em;
@@ -69,7 +70,7 @@ transform: rotate(0deg);
 to {
 transform: rotate(360deg);
 }
-}
+} */
 
 /* ----- UX, Video and Photo Partials ----- */
 
@@ -336,11 +337,13 @@ footer p {
     font-weight: 400;
     font-size: 2.5rem;
     margin-bottom: 1em;
+    line-height: 1.5em;
 }
 
 #about-portrait {
     width: 100%;
     border-radius: 0.25em;
+    margin-bottom: 1em;
 }
 
 #about-current-status {
@@ -365,6 +368,12 @@ footer p {
     padding-top: 1.5em;
 }
 
+.about-section-image {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .about-section {
     margin-bottom: 2em;
 }
@@ -375,7 +384,29 @@ footer p {
     text-transform: uppercase;
 }
 
-.work-exp-time-des {
+blockquote {
+    font-family: "ivymode", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: left;
+    padding: 0.5em 0em 0.5em 1em; 
+    /* top right bottom left */
+    line-height: 1.5em;
+    border-left: solid 2px var(--black);
+}
+
+.hyperlink-hightlight {
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.hyperlink-normal {
+    color: var(--black);
+}
+
+work-exp-time-des {
     margin-top: 1em;
     margin-bottom:0;
 }
@@ -535,15 +566,22 @@ footer p {
 
     /* ---------- |Desktop| PAGE: ABOUT ---------- */
     #page-about {
-        max-width: 60%;
+        max-width: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3em;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
+        "about-page-title about-page-title" 
         "about-general about-important-info";
-        gap: 3em;
+        gap: 0.5em;
+    }
+
+    #page-about-title {
+        grid-area: about-page-title;
+        text-align: center;
+        line-height: 1.5em;
     }
 
     #about-portrait {
