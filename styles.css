@@ -1,0 +1,679 @@
+@import url("https://use.typekit.net/wxn2bww.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Color */
+:root {
+    --black: #191919;
+    --white: #ffffff;
+    --grey: #e3e3e3;
+    --light-grey: #f5f5f5;
+    --dark-grey: #343434;
+    --yellow:#ffe57d;
+}
+
+* {
+    font-family: "DM Sans", sans-serif;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+/* ---------- PARTIALS SECTION STARTS----------*/
+/* ----- Navigation bar ----- */
+header {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    border-bottom: 1px solid var(--grey);
+    background-color: var(--white);
+    display: flex;
+    z-index: 999;
+}
+
+.navbar {
+    width: 100%; 
+}
+
+
+#logo {
+    width: 6em;
+    margin-left: 1em;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em; 
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* ----- Rotating object -----
+#rotating-object {
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+    animation: rotating-object 10s infinite linear;
+    width: 100%;
+}
+
+@keyframes rotating-object {
+from {
+transform: rotate(0deg);
+}
+
+to {
+transform: rotate(360deg);
+}
+} */
+
+/* ----- UX, Video and Photo Partials ----- */
+
+.section-title {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem; /* 32px */
+    text-align: center;
+    margin-bottom: 1em;
+    /* margin-top: 1em; */
+}
+
+/* card animation */
+.card {
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+    border: solid 1px var(--grey);
+    overflow: hidden;
+    box-shadow: 0 0.125em 0.3125em rgb(122, 122, 122,0.1);
+    /* x, y, blur radius, color */
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.card-body {
+    padding-top:1.5em;
+}
+
+.card:hover {
+    transform: translateY(-0.625em);
+}
+
+.card-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+    margin-top: 0;
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+.tag {
+    font-size: 0.75rem;
+    border-radius: 0.375em 0.5em;
+    background-color: rgb(255, 245, 219);
+    display: inline-flex;
+    padding: 0.25em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button: Default */
+.button-view-project {
+    display: block;
+    padding: 1em;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+
+.button-view-project:hover {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+/* Button: Disabled */
+.button-view-project-disabled {
+    display: block;
+    padding: 1em;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    cursor: not-allowed;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--black);
+}
+
+footer p {
+    color: var(--white);
+    text-align: center;
+}
+
+/* ---------- PARTIALS SECTION ENDS----------*/
+
+/* *********************************************************** */
+/* *********************************************************** */
+
+/* make the footer to the end of the browser */
+.page-fullscreen-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    
+}
+
+.page-fullscreen-flex main {
+    flex: 1;
+    /* make the footer to the end of the browser */
+}
+
+/* ---------- |Phone| PAGE: HOME ---------- */
+/* Section: intro */
+#home-chuong-portrait {
+    max-width: 7.5em;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#intro-title { 
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2.25rem; /* 36px */
+    text-align: center;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+#intro-title .italic-word {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;/* 36px */
+    color: var(--black);
+    font-style: italic;
+}
+
+#intro-description {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 1.125rem; /* 20px*/
+    text-align: center;
+}
+
+.button-get-to-know-me {
+    max-width: 10em;
+    display: block;
+    padding: 1em;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0.25em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 2em;
+}
+
+/* -----Indicator----- */
+.indicator-space {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+.indicator {
+    width: 140px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+/* Flickering asterisk */
+#contact-asterisk {
+    font-family: "Kalnia", serif;
+    font-size: 5rem;
+    margin: 0;
+}
+
+#contact-asterisk {
+    animation: contact-asterisk 1s infinite alternate;
+}
+
+@keyframes contact-asterisk {
+    from { opacity: 100;}
+    to { opacity: 0;}
+}
+
+#contact {
+    text-align: center;
+    margin-bottom: 5em;
+    color: var(--white);
+}
+#contact-title { 
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+#contact-email {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+#social-media {
+    margin-top: 2em;
+}
+
+#linkedin, #behance, #vimeo, #resume {
+    font-weight: 900;
+    color: var(--white);
+}
+
+#linkedin:hover, #behance:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* ---------- |Mobile| PAGE: PROJECTS ---------- */
+#page-projects {
+    margin-top: 10em;
+}
+
+/* Video responsive size */
+.player {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/* ---------- |Mobile| PAGE: ABOUT ---------- */
+#page-about {
+    margin-top: 10em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 5em;
+}
+
+#page-about-title {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+#about-portrait {
+    width: 100%;
+    border-radius: 0.25em;
+    margin-bottom: 1em;
+}
+
+#about-current-status {
+    border: solid 2px var(--black);
+    border-radius: 0.25em;
+    margin-bottom: 1em; 
+    overflow: hidden;
+}
+
+#current-box {
+    border-bottom: 2px solid var(--black);
+}
+
+#about-current-title {
+    font-weight: bold;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+#about-current-content {
+    padding: 1em;
+    padding-top: 1.5em;
+}
+
+.about-section-image {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.about-section {
+    margin-bottom: 2em;
+}
+
+.about-title {
+    font-weight: bold;
+    font-size: 1rem; 
+    text-transform: uppercase;
+}
+
+blockquote {
+    font-family: "ivymode", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: left;
+    padding: 0.5em 0em 0.5em 1em; 
+    /* top right bottom left */
+    line-height: 1.5em;
+    border-left: solid 2px var(--black);
+}
+
+.hyperlink-hightlight {
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.hyperlink-normal {
+    color: var(--black);
+}
+
+work-exp-time-des {
+    margin-top: 1em;
+    margin-bottom:0;
+}
+
+.work-experience-time, .education-time {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#about-important-info {
+    margin-top: 1em;
+}
+
+
+/* ---------- |Mobile| PAGE: CONTACT ---------- */
+#page-contact {
+    margin-top:10em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 5em;
+}
+
+#page-contact-title {
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.contact-info-block {
+    margin-bottom: 1em;
+}
+
+.contact-info-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.contact-info-detail {
+    font-size: 1.5em;
+    color: var(--black);
+}
+
+#contact-image {
+    max-width: 100%;
+    border-radius: 0.25em;
+    margin-top: 1em;
+}
+
+/* *********************************************************** */
+/* *********************************************************** */
+
+/* ---------- |Mobile| SUBPAGE ---------- */
+.main-container {
+    margin-top: 8em;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.go-to-project {
+    color: var(--black);
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.data-value {
+    margin-bottom: 2em;
+}
+
+/* .data-value:last-child {
+    margin-bottom: 0em;
+} */
+
+.data-value .data{
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+.data-value .value{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.subpage-title {
+    margin-bottom: 1em;
+}
+
+.value-longtext {
+    margin-bottom: 0;
+}
+
+.block-project-overview .data-value {
+    margin-bottom: 0;
+}
+
+.subpage-project-info {
+    background-color: var(--light-grey);
+    /* border: solid 1px var(--dark-grey); */
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.subpage-title-section {
+    margin-top: 1em;
+}
+
+.subpage-image {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.company-link {
+    color: var(--black);
+}
+
+/* *********************************************************** */
+/* *********************************************************** */
+
+/* ---------- DESKTOP VIEW ---------- */
+@media only screen and (min-width: 768px) {
+
+    header nav {
+        display: flex;
+    }
+
+    #logo {
+        margin-left: 5em;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5em;
+    }
+
+    .intro p {
+        margin: auto;
+        max-width: 60%;
+    }
+    /* ---------- |Desktop| PAGE: HOME ---------- */
+    /* Section: intro */
+    #home-chuong-portrait {
+        max-width: 7.5em;
+        margin-top: 5em;
+        margin-bottom: 2.5em;
+
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    #intro-title { 
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 4rem; /* 48px */
+        text-align: center;
+        margin-bottom: 0.5em;
+        line-height: 1.5em;
+    }
+
+    #intro-title .italic-word {
+        font-family: "ivymode", sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--black);
+        font-style: italic;
+    }
+
+    #intro-description {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 1.5rem; /* 24px */
+        text-align: center;
+        max-width: 50rem;
+    }
+
+    /* ---------- |Desktop| PAGE: ABOUT ---------- */
+    #page-about {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "about-page-title about-page-title" 
+        "about-general about-important-info";
+        gap: 0.5em;
+    }
+
+    #page-about-title {
+        grid-area: about-page-title;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    #about-portrait {
+        max-width: 100%;
+    }
+
+    #about-general {
+        grid-area: about-general;
+    }
+
+    #about-important-info {
+        grid-area: about-important-info;
+        padding-left: 3em;
+        margin-top: 0;
+    }
+
+    /* ---------- |Desktop| PAGE: PROJECTS ---------- */
+    #section-video {
+        max-width: 80%;
+        margin: auto;
+        gap: 3em;
+    }
+
+    /* ---------- |Desktop| PAGE: CONTACT ---------- */
+    #page-contact {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #contact-image {
+        max-width: 25em;
+    }
+
+    /* ---------- |Desktop| SUBPAGE ---------- */
+    .main-container {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subpage-project-info{
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "block-data-value block-project-overview" 
+        "block-data-value block-project-overview";
+        gap: 1em;
+
+    }
+
+    .block-data-value{
+        grid-area: block-data-value;
+    }
+
+    .block-project-overview {
+        grid-area: block-project-overview;
+    }
+
+    .data-value:last-child{
+        margin-bottom: 0;
+    }
+
+
+}
