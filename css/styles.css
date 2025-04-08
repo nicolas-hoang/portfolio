@@ -472,15 +472,42 @@ work-exp-time-des {
     margin-bottom: 1em;
 }
 
+.data-value {
+    margin-bottom: 2em;
+}
+
+/* .data-value:last-child {
+    margin-bottom: 0em;
+} */
+
+.data-value .data{
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+.data-value .value{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
 .subpage-title {
     margin-bottom: 1em;
 }
 
+.value-longtext {
+    margin-bottom: 0;
+}
+
+.block-project-overview .data-value {
+    margin-bottom: 0;
+}
+
 .subpage-project-info {
     background-color: var(--light-grey);
+    /* border: solid 1px var(--dark-grey); */
     padding: 1em;
     border-radius: 0.5em;
-    margin-bottom: 1em;
 }
 
 .subpage-title-section {
@@ -562,6 +589,7 @@ work-exp-time-des {
         color: var(--black);
         font-size: 1.5rem; /* 24px */
         text-align: center;
+        max-width: 50rem;
     }
 
     /* ---------- |Desktop| PAGE: ABOUT ---------- */
@@ -623,4 +651,29 @@ work-exp-time-des {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .subpage-project-info{
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "block-data-value block-project-overview" 
+        "block-data-value block-project-overview";
+        gap: 1em;
+
+    }
+
+    .block-data-value{
+        grid-area: block-data-value;
+    }
+
+    .block-project-overview {
+        grid-area: block-project-overview;
+    }
+
+    .data-value:last-child{
+        margin-bottom: 0;
+    }
+
+
 }
