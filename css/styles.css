@@ -196,32 +196,39 @@ footer p {
 
 /* ---------- |Phone| PAGE: HOME ---------- */
 /* Section: intro */
-#home-chuong-portrait {
-    height: 350px; /* or whatever fixed height you prefer */
-    /* width: auto; */
-    max-width: 100%;
-    margin-bottom: 2.5em;
-    object-fit: cover;
-}
 
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 6.5em;
+}
+
+#home-chuong-portrait {
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
+}
+
+#intro-title-description-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    padding: 1em;
 }
 
 #intro-title { 
     font-family: "ivymode", sans-serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 2.25rem; /* 36px */
+    font-size: 2rem; /* 36px */
     text-align: center;
     margin-bottom: 0.5em;
-    line-height: 1.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    line-height: 1.2em;
+    /* margin-right: 1em; */
 }
+
 
 #intro-title .italic-word {
     font-family: "ivymode", sans-serif;
@@ -237,7 +244,6 @@ footer p {
     color: var(--black);
     font-size: 1.125rem; /* 20px*/
     text-align: center;
-    margin-left: 1em;
     margin-right: 1em;
 }
 
@@ -560,12 +566,8 @@ work-exp-time-des {
     /* ---------- |Desktop| PAGE: HOME ---------- */
     /* Section: intro */
     #home-chuong-portrait {
-        /* margin-top: 5em; */
-        height: 458px; /* or whatever fixed height you prefer */
-        /* width: auto; */
-        max-width: 100%;
-        margin-bottom: 2.5em;
-        object-fit: cover;
+        height: 500px;
+        width: auto;
 
     }
 
@@ -573,7 +575,7 @@ work-exp-time-des {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        margin-top: 8em; 
     }
 
     #intro-title { 
@@ -583,7 +585,7 @@ work-exp-time-des {
         font-size: 3.5rem; /* 56px */
         text-align: center;
         margin-bottom: 0.5em;
-        line-height: 1.5em;
+        line-height: 1.2em;
     }
 
     #intro-title .italic-word {
