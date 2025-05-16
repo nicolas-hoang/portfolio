@@ -615,7 +615,8 @@ work-exp-time-des {
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
         "about-page-title about-page-title" 
-        "about-general about-important-info";
+        "about-general about-important-info"
+        "about-about-me about-about-me";
         gap: 0.5em;
     }
 
@@ -637,6 +638,10 @@ work-exp-time-des {
         grid-area: about-important-info;
         padding-left: 3em;
         margin-top: 0;
+    }
+
+    #about-about-me {
+        grid-area: about-about-me;
     }
 
     /* ---------- |Desktop| PAGE: PROJECTS ---------- */
