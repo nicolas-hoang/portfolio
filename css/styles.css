@@ -55,10 +55,10 @@ nav ul li a {
     color: #333333;
 }
 
-/* ----- Rotating object -----
+/* ----- Rotating object ----- */
 #rotating-object {
-    margin-top: 5em;
-    margin-bottom: 2.5em;
+    margin-top: 3em;
+    margin-bottom: 2em;
     animation: rotating-object 10s infinite linear;
     width: 100%;
 }
@@ -71,7 +71,7 @@ transform: rotate(0deg);
 to {
 transform: rotate(360deg);
 }
-} */
+}
 
 /* ----- UX, Video and Photo Partials ----- */
 
