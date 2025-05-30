@@ -205,9 +205,9 @@ footer p {
 }
 
 #home-chuong-portrait {
-    width: 100%;
-    max-width: 500px;
-    padding: 1em;
+    height: 300px;
+    width: 300px;
+    margin-top: 3em;
 }
 
 #intro-title-description-button {
@@ -565,8 +565,8 @@ work-exp-time-des {
     /* ---------- |Desktop| PAGE: HOME ---------- */
     /* Section: intro */
     #home-chuong-portrait {
-        height: 500px;
-        width: auto;
+        height: 300px;
+        width: 300px;
 
     }
 
