@@ -485,6 +485,10 @@ work-exp-time-des {
 /* *********************************************************** */
 
 /* ---------- |Mobile| SUBPAGE ---------- */
+.alert-info {
+    margin-top: 1em;
+}
+
 .main-container {
     margin-top: 8em;
     padding: 1em;
