@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Case Study | Implementing SLAs and OLAs to Help Call Agents Track Tasks
-      and Improve Accountability
+      Implementing SLAs and OLAs to Help Call Agents Track Tasks and Improve
+      Accountability
     </title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -76,8 +76,8 @@
       <a class="go-to-project" href="index.html">Go back</a>
       <!-- Project title -->
       <h2 class="subpage-title">
-        Case Study | Implementing SLAs and OLAs to Help Call Agents Track Tasks
-        and Improve Accountability.
+        Implementing SLAs and OLAs to Help Call Agents Track Tasks and Improve
+        Accountability.
       </h2>
       <!-- Project info -->
       <div class="subpage-project-info">
@@ -97,17 +97,19 @@
         </div>
         <div class="block-project-overview">
           <div class="data-value">
-            <!-- <p class="data">PROJECT OVERVIEW:</p> -->
-            <!-- <p class="value-longtext">
-              The feature belongs to a product called Merchant used for call
-              centre of Fiserv. elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p> -->
+            <p class="data">PROJECT OVERVIEW:</p>
+            <p class="value-longtext">
+              The SLA/OLA feature is part of a digital product called Merchant,
+              one of several tools within an ecosystem designed for call
+              centres. This feature was developed to help call centre agents
+              manage their tasks more effectively. It displays the remaining
+              time directly on the interface, showing both the time agreed upon
+              internally to resolve each inquiry and the time agents have left
+              to meet those expectations for callers representing merchants. The
+              project was delivered in collaboration with a cross-functional
+              team, including a product owner, developers, and quality assurance
+              specialists.
+            </p>
           </div>
         </div>
       </div>
@@ -120,39 +122,22 @@
       <!-- Intro -->
       <h3 class="subpage-title-section">Introduction</h3>
       <p>
-        SLA/OLA is a feature of a B2B product called Merchant . From the
-        business perspective, the feature can be generally understood as a
-        method that helps the working progress more effectively, more details:
-      </p>
-      <p>
-        • SLA (Level Service Agreement) is an agreement between Client
-        (Merchant) and Service Provider, which is applied to make sure Service
-        Provider's Agents will complete their tasks on time, or they will get a
-        penalty.
-      </p>
-      <p>
-        • OLA (Operational Service Agreement) is the internal agreement of a
-        team, which is applied to make sure that team will complete the task on
-        time.
-      </p>
-      <p>
-        I was the main designer working on this new feature in early Fall 2021
-        with a scum team of product owner, business analyst, developers, and
-        quality controls.
-      </p>
-      <p>
-        (Merchant is the CRM that belongs to Client360 - the Call Center
-        Application.)
+        During my time at
+        <a class="hyperlink-normal" href="https://aperia.com" target="_blank"
+          >Aperia</a
+        >, I worked as a UX Designer on a digital product called Merchant.
+        Merchant is one of the applications within a call centre ecosystem
+        called Client360. In the diagram below, I’ve illustrated how Merchant
+        fits into the Client360 ecosystem.
       </p>
       <img
         class="subpage-image"
         src="img/ux-sla-ola-products.webp"
         alt="The chart shows the product Chuong works on amongst other products."
       />
-      <!-- Purpose -->
-      <h3 class="subpage-title-section">Purpose</h3>
+
       <!-- Context -->
-      <h5 class="subpage-title-section">1. Context</h5>
+      <h3 class="subpage-title-section">Context</h3>
       <p>
         Assume that one day, the Manager of KFC calls Bank of America to inquire
         about the current transaction because something appears to be incorrect.
@@ -171,20 +156,44 @@
         alt="Illustration shows the context when to use the Merchant CRM."
       />
       <!-- Problem -->
-      <h5 class="subpage-title-section">2. Problem</h5>
+      <h3 class="subpage-title-section">The Problem</h3>
       <p>
-        There are probably thousands of inquiries in the CRM, and not all of
-        them are prioritized the same way. Some are urgent and must be resolved
-        immediately, while others can wait. However, the agent sometimes
-        overlooks this, which has an impact on the business.
+        Each call centre agent receives up to 50 inquiries per day, contributing
+        to hundreds of unresolved cases stored in the Merchant CRM. These
+        inquiries vary in priority. Some are urgent and require immediate
+        attention, while others can be addressed later. However, agents
+        sometimes overlook these distinctions, leading to delays that can
+        negatively impact business performance.
       </p>
-      <p>
-        So the issue here is how to ensure that the Agent is always aware of
-        resolving inquiries in order of priority, from most to least urgent
-      </p>
+      <img
+        class="subpage-image"
+        src="img/ux-sla-ola-problem.webp"
+        alt="The chart shows the product Chuong works on amongst other products."
+      />
       <!-- Goal -->
-      <h5 class="subpage-title-section">3. Goal</h5>
+      <h3 class="subpage-title-section">Goal</h3>
       <p>
+        The goal was to ensure that agents consistently resolve inquiries based
+        on priority, starting with the most urgent. To address this, I
+        collaborated closely with the product owner after receiving the problem
+        statement from our client. Together, we explored possible solutions
+        through extensive desk research and discussions. Ultimately, we decided
+        to implement an SLA and OLA feature, similar to those used in other
+        products on the market, to address the problem.
+      </p>
+      <p>But, what are SLA and OLA?</p>
+      <p>
+        • SLA (Service Level Agreement) is a formal agreement between the client
+        (Merchant) and the service provider. It ensures that the provider's
+        agents complete their tasks within a specified timeframe. If they fail
+        to do so, they may face penalties.
+      </p>
+      <p>
+        • OLA (Operational Level Agreement) is an internal agreement within a
+        team. It defines the expected timeframes for completing tasks to support
+        the commitments made in the SLA.
+      </p>
+      <!-- <p>
         User: Complete inquiries in order of priority, from most to least urgent
         without missing or delay.
       </p>
@@ -192,51 +201,87 @@
       <p>
         Product: Enhance product quality by introducing a new and useful
         feature.
-      </p>
+      </p> -->
       <!-- Design process -->
-      <h3 class="subpage-title-section">Design process</h3>
+      <h3 class="subpage-title-section">So, what did I do exactly?</h3>
       <p>
-        <strong>Step 1:</strong> Gathered business requirements from the Product
-        Owner and ask questions to learn more about what the business wants,
-        what the problem is, and so on.
-        <br />
-        <strong>Step 2:</strong> Conducted secondary research.
-        <br />
-        <strong>Step 3:</strong> Created a low-fidelity wireframe and present it
-        to the Internal Design team, POs, and Client for feedback. This step is
-        repeated several times until the client's requirements are met and the
-        entire flow is approved.
-        <br />
-        <strong>Step 4:</strong> Created high-fidelity mockups and hand them off
-        to the scrum team.
-        <br />
-        <strong>Step 5:</strong> Followed up with the scrum team and support
-        them in case any problem happen.
-        <br />
-        <strong>Step 6:</strong> Conducted UI testing after the feature has been
-        deployed.
+        To solve the problem, I first worked closely with the Product Owner to
+        clarify the client's ambiguous requirements. We aligned on the goals and
+        defined what success would look like.
       </p>
+
+      <p>
+        Next, I conducted secondary research to understand how other products in
+        the market handled similar challenges, using those insights to guide our
+        approach.
+      </p>
+      <p>
+        Once the direction was clear, I sketched out low-fidelity wireframes to
+        visualize the SLA/OLA feature and presented them to stakeholders for
+        feedback. This helped us align early and make informed design decisions.
+      </p>
+      <!-- Wireframe -->
+      <img
+        class="subpage-image"
+        src="img/ux-sla-ola-wireframe.webp"
+        alt="SLA OLA feature is shown on the interface of the Merchant CRM."
+      />
+      <!-- Wireframe image description -->
+      <p>
+        <i
+          >Image 1: The wireframe above shows the concept I designed based on
+          discussions with the Product Owner and client feedback.</i
+        >
+      </p>
+      <!-- Wireframe ends -->
+      <p>
+        I then designed the final high-fidelity mockups, integrating the SLA/OLA
+        feature directly into the Merchant CRM interface to help agents
+        prioritize their tasks more effectively.
+      </p>
+      <p>
+        After handing off the designs to the scrum team, I stayed involved
+        throughout the development process by following up regularly and
+        offering support whenever the team encountered questions or blockers.
+      </p>
+      <!-- Mockups -->
       <img
         class="subpage-image"
         src="img/ux-slaola-final-design.webp"
         alt="SLA OLA feature is shown on the interface of the Merchant CRM."
       />
-      <h3 class="subpage-title-section">Challenges</h3>
+      <!-- Mockups image description -->
       <p>
-        • Devoted a significant amount of time and effort to discussing and
-        clarifying raw requirements with the PO/BA team.
-        <br />
-        • Required to understand complex business logic before and during
-        designing phase.
+        <i
+          >Image 2: The final design of the SLA/OLA feature was integrated and
+          visualized within the Merchant CRM interface.</i
+        >
       </p>
-
+      <!-- Mockup ends -->
       <!-- Result -->
       <h3 class="subpage-title-section">Result</h3>
       <p>
-        We received positive feedback from the business side, which mentioned
-        that the design is clear and easy to notice when working on the task.
-        That boosts the user's confidence because they know there is a tool that
-        can help them with their work.
+        The client gave positive feedback on the feature, saying the design was
+        clear and easy to spot while working on tasks. It also helped boost the
+        agents’ confidence because they knew they had a tool to support them in
+        managing their workload.
+      </p>
+      <!-- Challenges and Limitations -->
+      <h3 class="subpage-title-section">Challenges and Limitations</h3>
+      <p>
+        One of the main challenges I faced was interpreting and clarifying
+        ambiguous requirements from the client. The initial problem statement
+        lacked detail, so I worked closely with the Product Owner to dig deeper
+        and ensure we were solving the right problem. Another key challenge was
+        defining clear logic for the SLA/OLA feature. Since the feature impacted
+        how agents prioritized tasks, it was crucial to make sure the behavior
+        was well-defined and aligned with business expectations.
+      </p>
+      <p>
+        A major limitation of the project was that we were unable to gather
+        direct user feedback on the SLA/OLA feature. Due to time and access
+        constraints, we had to rely on stakeholder insights and secondary
+        research to guide our design decisions.
       </p>
     </main>
     <!-- Footer -->
